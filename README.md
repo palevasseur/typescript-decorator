@@ -9,9 +9,7 @@ Intercept and control a class method
 class App {
   interceptorDisplay = new Interceptor(this.display);
 
-  @interceptor('interceptorDisplay', function(mess) {
-    // all display() called are intercepted here
-  })
+  @interceptor('interceptorDisplay', function(mess) { /* display() calls are intercepted here */ })
   private display(mess) {
     ...
   }
